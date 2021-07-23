@@ -4,8 +4,8 @@ import cv2 as cv
 from imutils import Mono_Odometery
 import os
 
-img_path = '/home/aji/Documents/Dataset/data_odometry_gray/dataset/sequences/00/image_0/'
-pose_path = '/home/aji/Documents/Dataset/data_odometry_poses/dataset/poses/00.txt'
+img_path = "/home/heru-05/Desktop/Mono_odometry/dataset/sequences/00/image_0_3/image_0/"
+pose_path = "/home/heru-05/Desktop/Mono_odometry/dataset/data_odometry_poses/dataset/poses/00.txt"
 
 focal = 718.8560  # focal length
 pp = (607.1928, 185.2157)  # principal point
@@ -37,7 +37,7 @@ while (vo.hasNextFrame()):
     #             frame = cv.circle(frame,(a,b),5,color[i].tolist(),-1)
 
     # cv.add(frame, mask)
-    cv.imshow('frame', frame)
+    cv.imshow("frame", frame)
     k = cv.waitKey(1)
     if k == 27:
         break
@@ -60,24 +60,27 @@ while (vo.hasNextFrame()):
     print("x: {}, y: {}, z: {}".format(*[str(pt) for pt in mono_coord]))
     print("true_x: {}, true_y: {}, true_z: {}".format(*[str(pt) for pt in true_coord]))
 
+
     draw_x, draw_y, draw_z = [int(round(x)) for x in mono_coord]
     true_x, true_y, true_z = [int(round(x)) for x in true_coord]
-
     traj = cv.circle(traj, (true_x + 400, true_z + 100), 1, list((255, 255, 255)), 4)
     traj = cv.circle(traj, (draw_x + 400, draw_z + 100), 1, list((0, 255, 0)), 4)
 
-    cv.putText(traj, 'Actual Position:', (110, 20), cv.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
-    cv.putText(traj, 'White', (250, 20), cv.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
-    cv.putText(traj, 'Estimated Odometry Position:', (0, 50), cv.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
-    cv.putText(traj, 'Green', (250, 50), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
-    cv.putText(traj, 'Fast, Aji-ptn', (690, 590), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
+    text2 = "Advisor : Dr. Chuang-Jan Chang"
+    text3 = "Actual Position : White"
+    text5 = "Estimation Position : Green"
+    text6 = "SIFT Algorithm"
+    cv.putText(traj, text2, (40, 40), cv.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+    cv.putText(traj, text3, (40, 60), cv.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+    cv.putText(traj, text5, (40, 80), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+    cv.putText(traj, text6, (40, 590), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
+    # Writter trajectory
+    cv.imshow("trajectory", traj)
 
     # value = [mono_coord, true_coord, draw_x, draw_y, draw_z, true_x, true_y, true_z]
     # with open("translation.txt", "w") as output:
     #     output.write(str(value))
     #     output.write(str("\n"))
 
-    cv.imshow('trajectory', traj)
-cv.imwrite("./images/trajectory.png", traj)
-
+cv.imwrite("/home/heru-05/Desktop/Mono_odometry/Result/trajectory.png", traj)
 cv.destroyAllWindows()
