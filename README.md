@@ -53,7 +53,7 @@ lk_params = dict(winSize=(21, 21), criteria=(cv.TERM_CRITERIA_EPS | cv.TERM_CRIT
 
 ```
 $ virtualenv env
-$ aource env/bin/activate
+$ source env/bin/activate
 ```
 - Install LIbrary
 
