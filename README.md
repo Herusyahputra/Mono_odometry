@@ -68,6 +68,9 @@ $ pip install numpy
 $ python3 main.py
 ````
 
+https://user-images.githubusercontent.com/60929939/126761580-71810e30-b9d5-48de-821e-c834a3a7bcc3.mp4
+
+
 **Result**
 - Fast algorithm
 
