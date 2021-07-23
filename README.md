@@ -22,16 +22,11 @@ Date : 28 July, 2021
 1. [image sequence](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_odometry_gray.zip)
 2. [pose image](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_odometry_poses.zip)
 
-**Requirement**
-```
-$ pip install opencv-contrib-python
-$ pip install opencv-python
-$ pip install numpy
-```
 **How to use**
+- Open terminal CTRL + T
 - First clone repository 
 ```
-$ git clone https://github.com/aji-ptn/Mono_odometry.git
+$ git clone https://github.com/Herusyahputra/Mono_odometry.git
 ```
 
 - In `main.py` change `img_path` and `pose_path` to correct image sequences and pose file paths in **line 7 and 8**
@@ -53,11 +48,26 @@ pp = (607.1928, 185.2157)  # principal point
 ```
 lk_params = dict(winSize=(21, 21), criteria=(cv.TERM_CRITERIA_EPS | cv.TERM_CRITERIA_COUNT, 30, 0.01))
 ```
+
+- Make environment
+
+```
+$ virtualenv env
+$ aource env/bin/activate
+```
+- Install LIbrary
+
+```
+$ pip install opencv-contrib-python
+$ pip install opencv-python
+$ pip install numpy
+```
 - Run command 
    
 ```
 $ python3 main.py
 ````
+
 **Result**
 - Fast algorithm
 
