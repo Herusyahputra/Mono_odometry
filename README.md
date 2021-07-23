@@ -61,18 +61,19 @@ $ python3 main.py
 **Result**
 - Fast algorithm
 
-![fast](https://user-images.githubusercontent.com/60929939/126679327-0a6b26cf-657a-4735-9fad-de297ff49990.png)
-![fast1](https://user-images.githubusercontent.com/60929939/126679343-363051c0-31ec-4961-817b-86199d108c1a.png)
+![FAST1](https://user-images.githubusercontent.com/60929939/126755753-65dd4f93-05bf-4f07-ab20-a19d3480b592.png)
+![Fast](https://user-images.githubusercontent.com/60929939/126755846-277dacaa-ce73-4dc0-8aea-dfab31e636a3.png)
+
 
 - ORB algorithm
 
-![orb](https://user-images.githubusercontent.com/60929939/126679401-68e03c64-c422-481e-8101-85bba4caf932.png)
-![orb1](https://user-images.githubusercontent.com/60929939/126679408-2525f175-63bf-49f3-acc8-3c7668eaf70e.png)
+![trajectory](https://user-images.githubusercontent.com/60929939/126756312-9588c075-d640-4011-8805-c1571b6bc09e.png)
+![orb](https://user-images.githubusercontent.com/60929939/126756538-f6ff46b0-0b62-4cff-af13-f48924a66c14.png)
 
 - SIFT algorithm
 
-![sift](https://user-images.githubusercontent.com/60929939/126679472-31b32a56-6560-4863-b50e-4242c9d78bfa.png)
-![sift1](https://user-images.githubusercontent.com/60929939/126679476-59c19be3-4644-4804-8d8a-b471dcc88533.png)
+![trajectory](https://user-images.githubusercontent.com/60929939/126757153-7248af60-7429-4fdb-9dbb-62587fe86521.png)
+![SIFT](https://user-images.githubusercontent.com/60929939/126758199-516f15bd-01d5-4c71-99f4-18bfd506305f.png)
 
 
 **References**
