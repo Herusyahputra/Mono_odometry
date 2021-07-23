@@ -32,8 +32,8 @@ $ git clone https://github.com/Herusyahputra/Mono_odometry.git
 - In `main.py` change `img_path` and `pose_path` to correct image sequences and pose file paths in **line 7 and 8**
    
 ```
-img_path = '/home/aji/Documents/Dataset/data_odometry_gray/dataset/sequences/00/image_0/'
-pose_path = '/home/aji/Documents/Dataset/data_odometry_poses/dataset/poses/00.txt'
+img_path = "/home/heru-05/Desktop/Mono_odometry/dataset/sequences/00/image_0_3/image_0/"
+pose_path = "/home/heru-05/Desktop/Mono_odometry/dataset/data_odometry_poses/dataset/poses/00.txt"
 ```
 
 - Ensure focal length and principal point information is correct
