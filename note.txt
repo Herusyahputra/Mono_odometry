@@ -7,4 +7,3 @@ detector=cv2.ORB_create()):
 3.SIFT algorithm
 detector=cv2.xfeatures2d.SIFT_create()):
 
-4.
