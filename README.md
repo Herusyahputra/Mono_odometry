@@ -1,7 +1,7 @@
 # Mono Visual Odometry using Kitti dataset
 Advisor : Dr. Cuang-Jan Chang                                                                                                                               
 Modification by : Heru-05                                                                                                                               
-Date : 28 July, 2021
+Date : July 22, 2021
 
 **Algorithm**
 
