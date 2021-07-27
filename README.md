@@ -72,6 +72,10 @@ https://user-images.githubusercontent.com/60929939/126761580-71810e30-b9d5-48de-
 
 
 **Result**
+
+![image](https://user-images.githubusercontent.com/60929939/127080593-92f0e2ff-d5eb-4700-99c1-1520eee8b2f4.png)
+
+
 - Fast algorithm
 
 ![FAST1](https://user-images.githubusercontent.com/60929939/126755753-65dd4f93-05bf-4f07-ab20-a19d3480b592.png)
