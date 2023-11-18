@@ -59,5 +59,3 @@ main.py
 
 # Reference
 An invaluable resource I used in building the visual odometry system was Avi Singh's blog post: http://avisingh599.github.io/vision/monocular-vo/ as well as his C++ implementation found [here](https://github.com/avisingh599/mono-vo).
-
-# Aji Pamungkas Tri Nurcahyo
